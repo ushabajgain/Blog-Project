@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
     {% load static %}
 <link  href ="{% static 'src/styles.css' %}" rel="stylesheet" />
 </head>
 <body>
-    <h1>Index Page</h1>
-    <h1 class="text-red-500" > Hello Home </h1>
-    <p class="text-blue-600" >Hello k xa </p>
+    {% include "components/_navbar.html"%}
+    {% comment %} <h1 class="text-red-500" > Hello Home </h1>
+    <p class="text-blue-600" > Hello k xa </p> {% endcomment %}
+
+    
 </body>
 </html>

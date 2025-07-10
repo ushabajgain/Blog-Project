@@ -1,9 +1,13 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from ..models import Blog
+from django.contrib.auth.decorators import login_required
 
 def index(request):
-    return render(request, 'main/index.html', {'user': request.user})
+    blog = Blog.objects.all()
+    
+    return render(request, 'main/index.html', {'blog': blog})
 
+@login_required
 def create_blog(request):
     errors = {}
 
@@ -47,3 +51,9 @@ def create_blog(request):
 
     
     return render(request, 'main/create_blog.html')
+
+def single_page(request, id): 
+    # blog = Blog.objects.get(id=id)
+    blog = get_object_or_404(Blog, id=id)
+    print(blog)
+    return render(request,'main/single_page.html',{'blog':blog})

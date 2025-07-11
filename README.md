@@ -4,19 +4,7 @@ A full-featured blog application built with Django. This web app includes user r
 
 ## Project Structure
 
-Blog-Project/
-├── myvenv/                 # Virtual environment (excluded from Git)
-├── my_project/             # Main Django project folder
-│   ├── settings.py
-│   ├── urls.py
-│   └── ...
-├── blog/                   # Blog app folder
-│   ├── models.py
-│   ├── views.py
-│   └── templates/
-├── db.sqlite3              # Default database
-├── manage.py
-└── requirements.txt
+
 
 
 ## Features

@@ -2,11 +2,6 @@
 
 A full-featured blog application built with Django. This web app includes user registration, login/logout, post creation/editing/deletion, and a simple front-end interface.
 
-## Project Structure
-
-
-
-
 ## Features
 
 - User Registration & Authentication 
